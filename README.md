@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# EliteAnime Admin Dashboard
 
-# Run and deploy your AI Studio app
+A modern, high-performance admin portal for managing anime content, user upgrades, and financial withdrawals.
 
-This contains everything you need to run your app locally.
+## 🚀 Quick Start
 
-View your app in AI Studio: https://ai.studio/apps/14d28442-df34-4fa8-8ace-289a41a343ec
+### 1. Clone the repository
+```bash
+git clone https://github.com/dugzu001-glitch/eliteanime.git
+cd eliteanime
+```
 
-## Run Locally
+### 2. Install dependencies
+```bash
+npm install
+```
 
-**Prerequisites:**  Node.js
+### 3. Configure Environment Variables
+Create a `.env` file in the root directory and add your Firebase credentials:
+```env
+VITE_FIREBASE_API_KEY=AIzaSyBTn8aUStr7_SP5tSQoDX1MSj1nkowcTLc
+VITE_FIREBASE_AUTH_DOMAIN=elite-pesa-task-reward-app.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=elite-pesa-task-reward-app
+VITE_FIREBASE_STORAGE_BUCKET=elite-pesa-task-reward-app.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=667859878557
+VITE_FIREBASE_APP_ID=1:667859878557:web:203d2ee6e42ac942230a74
+```
 
+### 4. Run development server
+```bash
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠 Features
+- **Real-time Analytics**: Interactive charts for ad views and user activity.
+- **Content Management**: Upload and manage anime and episodes.
+- **Financial Processing**: Approve upgrade and withdrawal requests.
+- **User Directory**: Manage community members and their balances.
+
+## 🌐 Deployment
+This project is built with Vite and can be easily deployed to **Vercel**, **Netlify**, or **Cloud Run**. Ensure you set the environment variables in your hosting provider's dashboard.
